@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29418.71
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JWTAuth", "JWTAuth\JWTAuth.csproj", "{E10FC194-D43E-4B2F-9344-96898F605501}"
 EndProject
@@ -15,7 +15,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsUI", "WindowsFo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncDemo", "AsyncDemo\AsyncDemo.csproj", "{FC8541C2-D09E-49C0-81DA-421D752E923B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextFile_DataAccess", "TextFile_DataAccess\TextFile_DataAccess.csproj", "{39282BA4-DF73-429B-844D-944E38A99D81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextFile_DataAccess", "TextFile_DataAccess\TextFile_DataAccess.csproj", "{39282BA4-DF73-429B-844D-944E38A99D81}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "starter", "starter\starter.csproj", "{8A8EC408-5D2F-4188-860A-28058C749C95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseLinkedList", "ReverseLinkedList\ReverseLinkedList.csproj", "{1BB9C933-9F0E-4E39-B01C-21320396C27B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{39282BA4-DF73-429B-844D-944E38A99D81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39282BA4-DF73-429B-844D-944E38A99D81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39282BA4-DF73-429B-844D-944E38A99D81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A8EC408-5D2F-4188-860A-28058C749C95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A8EC408-5D2F-4188-860A-28058C749C95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A8EC408-5D2F-4188-860A-28058C749C95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A8EC408-5D2F-4188-860A-28058C749C95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BB9C933-9F0E-4E39-B01C-21320396C27B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BB9C933-9F0E-4E39-B01C-21320396C27B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BB9C933-9F0E-4E39-B01C-21320396C27B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BB9C933-9F0E-4E39-B01C-21320396C27B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

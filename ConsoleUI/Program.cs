@@ -6,45 +6,63 @@ namespace ConsoleUI
 {
     class Program
     {
-        static ShoppingCart cart = new ShoppingCart();
+        static readonly ShoppingCart cart = new ShoppingCart();
 
         static void Main(string[] args)
         {
-            PopulateCartWithDemoData();
+            //PopulateCartWithDemoData();
 
-            Console.WriteLine($"The total for the cart is {cart.GenerateTotal(SubTotalAlert, CalculateLeveledDiscount, AlertUser):C2}");
+            //Console.WriteLine($"The total for the cart is {cart.GenerateTotal(SubTotalAlert, CalculateLeveledDiscount, AlertUser):C2}");
 
-            Console.WriteLine("\n");
+            //Console.WriteLine("\n");
 
-            decimal total = cart.GenerateTotal((subTotal) => Console.WriteLine($"The subtotal is {subTotal:C2}"),
-                (List<Product> items, decimal subTotal) =>
+            //decimal total = cart.GenerateTotal((subTotal) => Console.WriteLine($"The subtotal is {subTotal:C2}"),
+            //    (List<Product> items, decimal subTotal) =>
+            //    {
+            //        if (subTotal > 100)
+            //        {
+            //            return subTotal * 0.80M;
+            //        }
+            //        else if (subTotal > 50)
+            //        {
+            //            return subTotal * 0.85M;
+            //        }
+            //        else if (subTotal > 10)
+            //        {
+            //            return subTotal * 0.90M;
+            //        }
+            //        else
+            //        {
+            //            return subTotal;
+            //        }
+            //    },
+            //    (message) => Console.WriteLine(message));
+
+            //Console.WriteLine($"The total for the cart is {total:C2}");
+
+            //Console.WriteLine();
+
+            //Console.WriteLine($"Please press any key to exit.");
+
+            //Console.ReadKey();
+
+
+            //var value = "Ashikur Rahman Rijvy rrijvy@gmail.com 01717745808";
+            //Console.WriteLine(value.ToLower());
+
+            
+        }
+
+        public int Search(int[] nums, int target)
+        {
+            for (var i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] == target)
                 {
-                    if (subTotal > 100)
-                    {
-                        return subTotal * 0.80M;
-                    }
-                    else if (subTotal > 50)
-                    {
-                        return subTotal * 0.85M;
-                    }
-                    else if (subTotal > 10)
-                    {
-                        return subTotal * 0.90M;
-                    }
-                    else
-                    {
-                        return subTotal;
-                    }
-                },
-                (message) => Console.WriteLine(message));
-
-            Console.WriteLine($"The total for the cart is {total:C2}");
-
-            Console.WriteLine();
-
-            Console.WriteLine($"Please press any key to exit.");
-
-            Console.ReadKey();
+                    return i;
+                }
+            }
+            return -1;
         }
 
         private static void SubTotalAlert(decimal subTotal)
